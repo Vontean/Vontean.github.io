@@ -4,7 +4,7 @@
 
 /* 基础字体和背景显示设置 */
 body {
-    color: #fff;
+    color: #111;
     background-color:rgb(250,250,250,0.90);
     margin: 0;
     font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -21,8 +21,12 @@ a {
 }
 
 /* 视觉编排 */
+/* header部分 */
 .page-header {
     border-bottom: 30px rgb(253, 3, 3);
+}
+.page-header > * {
+    color: #fff
 }
 
 .ph-band {
@@ -59,6 +63,7 @@ a {
 }
 .ph-nav a {
     padding:1rem;
+    text-decoration:none;
 }
 .Von {
     padding-top: 4rem;
@@ -74,9 +79,88 @@ a {
     margin-top: 3px;
 }
 
+/* article部分 */
+article {
+    margin-top: 5rem;
+}
+
+/* .article-header > * {
+    text-align: center;
+    /* padding-left: auto;
+    padding-right: auto; */
+
+
+.titles {
+    background-color: rgb(250,250,250,0.8);
+    color: rgb(248, 136, 71);
+    border-bottom: 5px dotted rgba(110, 110, 110, 0.5);
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+}
+.titles p {
+    margin: 0;
+    padding-top: 2px;
+    font-size: 75%;
+    color: rgb(248, 136, 71, 0.8);
+}
+
+#intro * {
+    margin-left: auto;
+    margin-right: auto;
+}
+#intro > p {
+    /* margin-left: auto;
+    margin-right: auto; */
+    text-align: left;
+    width:60%;
+    text-indent: 4ch;
+}
+.intro-base {
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.intro-base div {
+    margin:0 0;
+    padding: 0 0 1rem;
+}
+.intro-base div p {
+    margin: 10px;
+    text-align: center;
+    font-size: 120%;
+}
+/* .intro-base div p:nth-child(2) {
+    font-size: 100%;
+} */
+#into-img {
+
+}
+
+#skill > div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+/* 通用部分 */
 .wrapper {
     margin-left: auto;
     margin-right: auto;
     padding:0 2rem;
     max-width: 75%;
+}
+.wrapper * {
+    text-align: center;
+}
+
+.en {
+    font-size: 80%;
+    font-weight: bold;
+    display:block;
+    margin-top: 5px;
 }
