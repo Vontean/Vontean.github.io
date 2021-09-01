@@ -1,11 +1,21 @@
 * {
     box-sizing: border-box;
+    margin:0;
+}
+
+:root {
+    --main-color: rgb(248, 136, 71);
+    --main-color-light: rgb(248, 136, 71, 0.8);
+    --link-color: rgb(248, 136, 71);
+    --background-color: rgb(250,250,250,0.90);
+    --black-color: #111;
+    --grey-color: rgba(110, 110, 110, 0.5);
 }
 
 /* 基础字体和背景显示设置 */
 body {
-    color: #111;
-    background-color:rgb(250,250,250,0.90);
+    color: var(--black-color);
+    background-color: var(--background-color);
     margin: 0;
     font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -13,7 +23,7 @@ body {
 }
 
 a {
-    color: rgb(248, 136, 71)
+    color: var(--link-color);
 }
 
 .Upper {
@@ -23,7 +33,11 @@ a {
 /* 视觉编排 */
 /* header部分 */
 .page-header {
-    border-bottom: 30px rgb(253, 3, 3);
+    /* border-bottom: 30px rgb(253, 3, 3); */
+    position:sticky;
+    top:0;
+    z-index:1;
+    /* margin-bottom: 1rem; */
 }
 .page-header > * {
     color: #fff
@@ -43,6 +57,7 @@ a {
     padding-bottom: 3rem;
     height:fit-content;
     width: 100%;
+    border-bottom: 3rem solid rgb(250,250,250);
     /* max-height: initial; */
 }
 .ph-img div div {
@@ -58,11 +73,11 @@ a {
 }
 .ph-nav {
     line-height: 1.5;
-    padding: 0 1rem 2rem;
+    padding: 0 1rem;
     /* margin-bottom: 1rem; */
 }
 .ph-nav a {
-    padding:1rem;
+    padding:0 1rem;
     text-decoration:none;
 }
 .Von {
@@ -81,29 +96,34 @@ a {
 
 /* article部分 */
 article {
-    margin-top: 5rem;
+    margin-top: 3rem;
+    position: relative;
 }
 
 /* .article-header > * {
     text-align: center;
     /* padding-left: auto;
     padding-right: auto; */
-
+.article-header, section > div, footer {
+    margin-bottom: 3rem;
+}
 
 .titles {
     background-color: rgb(250,250,250,0.8);
-    color: rgb(248, 136, 71);
-    border-bottom: 5px dotted rgba(110, 110, 110, 0.5);
+    color: var(--main-color);
+    border-bottom: 5px dotted var(--grey-color);
     max-width: 40%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom:3rem;
     padding-bottom: 1rem;
+    font-size: 150%;
 }
 .titles p {
     margin: 0;
     padding-top: 2px;
     font-size: 75%;
-    color: rgb(248, 136, 71, 0.8);
+    color: var(--main-color-light);
 }
 
 #intro * {
@@ -121,7 +141,7 @@ article {
     display: flex;
     flex-direction: column;
     width:50%;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     margin-bottom: 2rem;
 }
 .intro-base div {
@@ -132,12 +152,14 @@ article {
     margin: 10px;
     text-align: center;
     font-size: 120%;
+    position: relative;
 }
 /* .intro-base div p:nth-child(2) {
     font-size: 100%;
 } */
 #into-img {
-
+    max-width: 100%;
+    max-height: auto;
 }
 
 #skill > div {
@@ -145,6 +167,35 @@ article {
     flex-direction: row;
 }
 
+section img {
+    /* padding:1rem; */
+    /* border:3px solid #555;
+    border-radius: 2px; */
+    max-width: 100%;
+    max-height:auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+
+
+/* 网页footer部分 */
+.page-footer {
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+.page-footer div {
+    display:block;
+    width: 100%;
+    height:3rem;
+    border-top: 2px solid rgb(226, 226, 226);
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+}
+.page-footer p {
+    padding-bottom: 5px;
+    text-align: center;
+    color: var(--grey-color);
+}
 
 
 /* 通用部分 */
@@ -163,4 +214,21 @@ article {
     font-weight: bold;
     display:block;
     margin-top: 5px;
+}
+
+#works-list, #novels-list, #CG-list {
+    display: flex;
+    flex-direction: row;
+    /* flex: 1; */
+    justify-content: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+#works-list div, #novels-list div, #CG-list div {
+    width:23%;
+    padding:0 10px;
 }
