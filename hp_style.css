@@ -4,13 +4,28 @@
 }
 
 :root {
-    --main-color: rgb(248, 136, 71);
-    --main-color-light: rgb(248, 136, 71, 0.8);
-    --link-color: rgb(248, 136, 71);
+    --main-color: rgb(250, 155, 75);
+    --main-color-light: rgb(250, 155, 75, 0.8);
+    --link-color: rgb(250, 155, 75);
     --background-color: rgba(250, 250, 250, 0.9);
     --black-color: #111;
     --grey-color: rgba(110, 110, 110, 0.5);
-    --blue-color: rgb(73, 156, 204,0.9);
+    --gradient-color: rgb(73, 156, 204, 0.9);
+    animation: gradientChange 2s infinite alternate;
+}
+@keyframes gradientChange {
+    25% {
+        --gradient-color: rgb(73, 156, 204, 0.7);
+    }
+    50% {
+        --gradient-color: rgb(73, 156, 204, 0.5);
+    }
+    75% {
+        --gradient-color: rgb(73, 156, 204, 0.7);
+    }
+    100% {
+        --gradient-color: rgb(73, 156, 204, 0.9);
+    }
 }
 
 /* 基础字体和背景显示设置 */
@@ -63,7 +78,7 @@ a {
     border-bottom: 3rem solid rgb(250,250,250);
     /* max-height: initial; */
 }
-.ph-img div div {
+.ph-img div div:first-child {
     text-align: center;
     padding:0 40px;
 }
@@ -72,16 +87,41 @@ a {
     /* padding:0 40px; */
     display:flex;
     flex-direction: column;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 .ph-nav {
     line-height: 1.5;
-    padding: 0 1rem;
+    padding: 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: max-content;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    background-color:rgb(73, 156, 204, 0.5);
+    border-radius: 5px;
     /* margin-bottom: 1rem; */
 }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+    border-right: 2px solid rgb(31, 80, 121);
+}
+li:last-child {
+    border-right:none;
+}
+li a:hover {
+    background-color: rgb(36, 36, 36,0.8);
+}
+
 .ph-nav a {
     padding:0 1rem;
     text-decoration:none;
+    font-size: 100%;
 }
 .Von {
     padding-top: 4rem;
@@ -90,6 +130,7 @@ a {
     font-size: 3.5em;
     font-weight: 200;
     font-family:"Times New Roman", Times, serif;
+    color:rgba(233, 248, 255, 0.75);
     /* font-stretch: 500%; */
     /* padding: 0 40px; */
 }
@@ -115,13 +156,14 @@ article {
 .titles {
     background-color: rgb(250,250,250,0.8);
     color: var(--main-color);
-    border-bottom: 6px dotted var(--blue-color);
+    border-bottom: 6px dotted var(--gradient-color);
     max-width: 40%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom:3rem;
     padding-bottom: 1rem;
-    font-size: 150%;
+    font-size: 140%;
+    font-style: italic;
 }
 .titles p {
     margin: 0;
@@ -158,9 +200,9 @@ article {
     font-size: 120%;
     position: relative;
 }
-/* .intro-base div p:nth-child(2) {
-    font-size: 100%;
-} */
+/* .intro-base div p:nth-child(1) {
+    font-weight: bold; */
+/* } */
 #into-img {
     max-width: 100%;
     max-height: auto;
@@ -236,3 +278,12 @@ section img {
     width:23%;
     padding:0 10px;
 }
+#Link-intro:target, 
+#Link-skill:target,
+#Link-works:target, 
+#Link-novels:target, 
+#Link-CG:target, 
+#Link-Cont:target {
+    padding-top: 325px;
+}
+

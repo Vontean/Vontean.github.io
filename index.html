@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="hp_style.css">
+    <script>
+        function scrollWindow(){
+            window.scrollTo(960,350);
+        }
+        </script>
     <title>Hi! Vontean</title>
 </head>
 <body>
@@ -18,80 +23,85 @@
                     <!-- <p>Hello</p> -->
                 </div>
                 <div class="ph-nav">
-                    <nav class="Upper">
-                        <a href="#">address</a>
-                        <a href="#">mail</a>
-                        <a href="#">wechat</a>
-                    </nav>
+                    <ul class="Upper">
+                        <li><a href="#Link-intro">页首</a></li>
+                        <li><a href="#Link-skill">技能</a></li>
+                        <li><a href="#Link-works">设计</a></li>
+                        <li><a href="#Link-novels">故事</a></li>
+                        <li><a href="#Link-CG">图像</a></li>
+                        <li><a href="#Link-Cont">联系</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
-    <article>
-        <div class="wrapper">
-            <header class="article-header">
-                <h1 class="titles">关于我<p>Introduction</p></h1>
-                <div id="intro">
-                    <div class="intro-base">
-                        <div>
-                            <p>林文霆<br><span class="en">Wenting Lin</span></p>
-                            <p>同济大学工业设计在读</p>
+    <div class="container">
+        <article>
+            <div class="wrapper">
+                <header class="article-header">
+                    <h1 id="Link-intro" class="titles">关于我<p>Introduction</p></h1>
+                    <div id="intro">
+                        <div class="intro-base">
+                            <div>
+                                <p>林文霆<br><span class="en">Wenting Lin</span></p>
+                                <p>同济大学工业设计在读</p>
+                            </div>
+                            <div>
+                                <img id="intro-img" src="https://picsum.photos/200/200" alt="">
+                            </div>
                         </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem aliquam eveniet blanditiis quidem quae facere exercitationem quos fuga quas! Excepturi corrupti itaque quod consequatur blanditiis hic sapiente corporis fuga dicta? Deleniti quisquam odio repellendus, perspiciatis aliquid nisi distinctio esse odit. Non cum perspiciatis eius aliquid, repellat impedit alias cupiditate.</p>
+                    </div>
+                </header>
+                <section>
+                    <div id="skill">
+                        <h1 id="Link-skill" class="titles">技能点<p>Skills</p></h1>
                         <div>
-                            <img id="intro-img" src="https://picsum.photos/200/200" alt="">
+                            <p>01</p>
+                            <p>02</p>
+                            <p>03</p>
+                            <p>04</p>
+                            <p>05</p>
                         </div>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem aliquam eveniet blanditiis quidem quae facere exercitationem quos fuga quas! Excepturi corrupti itaque quod consequatur blanditiis hic sapiente corporis fuga dicta? Deleniti quisquam odio repellendus, perspiciatis aliquid nisi distinctio esse odit. Non cum perspiciatis eius aliquid, repellat impedit alias cupiditate.</p>
-                </div>
-            </header>
-            <section>
-                <div id="skill">
-                    <h1 class="titles">技能点<p>Skills</p></h1>
-                    <div>
-                        <p>01</p>
-                        <p>02</p>
-                        <p>03</p>
-                        <p>04</p>
-                        <p>05</p>
+                    <div id="pj-works">
+                        <h1 id="Link-works" class="titles">设计作业<p>Design Project</p></h1>
+                        <div id="works-list">
+                            <div><img src="https://picsum.photos/300/300"><p>项目一</p></div>
+                            <div><img src="https://picsum.photos/300/300"><p>项目二</p></div>
+                            <div><img src="https://picsum.photos/300/300"><p>项目三</p></div>
+                            <div><img src="https://picsum.photos/300/300"><p>项目四</p></div>
+                        </div>
                     </div>
-                </div>
-                <div id="pj-works">
-                    <h1 class="titles">设计作业<p>Design Project</p></h1>
-                    <div id="works-list">
-                        <div><img src="https://picsum.photos/300/300"><p>项目一</p></div>
-                        <div><img src="https://picsum.photos/300/300"><p>项目二</p></div>
-                        <div><img src="https://picsum.photos/300/300"><p>项目三</p></div>
-                        <div><img src="https://picsum.photos/300/300"><p>项目四</p></div>
+                    <div id="pj-novels"></div>
+                        <h1 id="Link-novels" class="titles">小说<p>Novels</p></h1>
+                        <div id="novels-list">
+                            <div><img src="https://picsum.photos/300/300"><p>小说一</p></div>
+                            <div><img src="https://picsum.photos/300/300"><p>小说二</p></div>
+                            <div><img src="https://picsum.photos/300/300"><p>小说三</p></div>
+                            <div><img src="https://picsum.photos/300/300"><p>小说四</p></div>
+                        </div>
+                    <div id="pj-CG"></div>
+                        <h1 id="Link-CG" class="titles">CG练习<p>CG Practice</p></h1>
+                        <div id="CG-list">
+                            <div><img src="https://picsum.photos/300/300"></div>
+                            <div><img src="https://picsum.photos/300/300"></div>
+                            <div><img src="https://picsum.photos/300/300"></div>
+                        </div>
+                </section>
+                <footer>
+                    <h1 id="Link-Cont" class="titles">联系我<p>Contact Me</p></h1>
+                    <div id="contact">
+                        <nav>
+                            <a href="#">address</a>
+                            <a href="#">mail</a>
+                            <a href="#">wechat</a>
+                        </nav>
                     </div>
-                </div>
-                <div id="pj-novels"></div>
-                    <h1 class="titles">小说<p>Novels</p></h1>
-                    <div id="novels-list">
-                        <div><img src="https://picsum.photos/300/300"><p>小说一</p></div>
-                        <div><img src="https://picsum.photos/300/300"><p>小说二</p></div>
-                        <div><img src="https://picsum.photos/300/300"><p>小说三</p></div>
-                        <div><img src="https://picsum.photos/300/300"><p>小说四</p></div>
-                    </div>
-                <div id="pj-CG"></div>
-                    <h1 class="titles">CG练习<p>CG Practice</p></h1>
-                    <div id="CG-list">
-                        <div><img src="https://picsum.photos/300/300"></div>
-                        <div><img src="https://picsum.photos/300/300"></div>
-                        <div><img src="https://picsum.photos/300/300"></div>
-                    </div>
-            </section>
-            <footer>
-                <h1 class="titles">联系我<p>Contact Me</p></h1>
-                <div id="contact">
-                    <nav>
-                        <a href="#">address</a>
-                        <a href="#">mail</a>
-                        <a href="#">wechat</a>
-                    </nav>
-                </div>
-            </footer>
-        </div>
-    </article>
+                </footer>
+            </div>
+        </article>
+    </div>
     <footer class="page-footer">
         <p>到底线了哦~</p>
         <div></div>
