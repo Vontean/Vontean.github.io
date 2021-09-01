@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 基础字体和背景显示设置 */
+body {
+    color: #fff;
+    background-color:rgb(250,250,250,0.90);
+    margin: 0;
+    font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
+}
+
+a {
+    color: rgb(248, 136, 71)
+}
+
+.Upper {
+    text-transform:capitalize;
+}
+
+/* 视觉编排 */
+.page-header {
+    border-bottom: 30px rgb(253, 3, 3);
+}
+
+.ph-band {
+    display: block;
+    height: 5px;
+    background-color: rgb(0,16,60);
+}
+/* https://picsum.photos/960/250 */
+.ph-img {
+    background-image: url(header_try.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 3rem;
+    height:fit-content;
+    width: 100%;
+    /* max-height: initial; */
+}
+.ph-img div div {
+    text-align: center;
+    padding:0 40px;
+}
+.ph-title {
+    /* margin: 0; */
+    /* padding:0 40px; */
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+.ph-nav {
+    line-height: 1.5;
+    padding: 0 1rem 2rem;
+    /* margin-bottom: 1rem; */
+}
+.ph-nav a {
+    padding:1rem;
+}
+.Von {
+    padding-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3em;
+    font-weight: 200;
+    /* font-stretch: 500%; */
+    /* padding: 0 40px; */
+}
+.Von-sentence {
+    /* margin: 0 0; */
+    margin-top: 3px;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding:0 2rem;
+    max-width: 75%;
+}
