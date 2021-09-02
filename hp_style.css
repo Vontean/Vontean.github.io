@@ -175,10 +175,14 @@ li a:hover {
     font-size: 100%;
 }
 #intro > p {
-    text-align: left;
-    width:80%;
+    text-align: center;
+    width:75%;
     margin-left: auto;
     margin-right: auto;
+    padding:0 2rem;
+}
+#intro > p span {
+    margin-top: 8px;
 }
 
 /* article部分 */
