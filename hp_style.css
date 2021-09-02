@@ -174,6 +174,12 @@ li a:hover {
     margin-top: 3px;
     font-size: 100%;
 }
+#intro > p {
+    text-align: left;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* article部分 */
 article {
