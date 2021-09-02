@@ -373,9 +373,9 @@ section img {
 }
 
 @media screen and (max-width:600px) {
-    .screen-resp-nav {
+    /* .screen-resp-nav {
         font-size: 30%;
-    }
+    } */
     .screen-resp-nav-width {
         max-width: 216px;
         height:max-content;
