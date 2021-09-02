@@ -125,6 +125,9 @@ a {
     max-width: max-content;
     height: 2rem;
     display: flex;
+    flex-wrap: wrap;
+    flex:1;
+    position: relative;
     align-items: center;
     background-color:rgb(73, 156, 204, 0.5);
     border-radius: 5px;
@@ -340,7 +343,7 @@ section img {
 #contact-container p {
     font-size:50%;
 }
-.contact-intro {
+.contact-info {
     color: var(--blue-color);
     font-size:50%;
 }
