@@ -1,3 +1,4 @@
+/* 全局和伪根变量 */
 * {
     box-sizing: border-box;
     margin:0;
@@ -51,6 +52,7 @@ a {
 
 /* 视觉编排 */
 /* header部分 */
+/* 移动端二维码 */
 #QR-code {
     position:absolute;
     top: 356px;
@@ -69,6 +71,7 @@ a {
 
 }
 
+/* 固定主页头 */
 .page-header {
     /* border-bottom: 30px rgb(253, 3, 3); */
     position:sticky;
@@ -113,6 +116,7 @@ a {
     flex-direction: column;
     margin-bottom: 2rem;
 }
+/* 页头导航栏 */
 .ph-nav {
     line-height: 1.5;
     padding: 0 0;
@@ -150,6 +154,7 @@ li a:hover {
     margin-bottom: 1px; */
     /* font-size: 100%; */
 }
+/* 页头标题和文字 */
 .Von {
     padding-top: 4rem;
     margin-left: auto;
@@ -250,7 +255,95 @@ section img {
     min-width: 50%;
     min-height: 50%;
 }
+/* skill技能点图片管理部分 */
+/* #skill {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; */
+    /* align-items: center;
+    justify-content: space-between;
+} */
+#skill-points {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 75%;
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 1rem;
+    position: relative;
+    /* flex-basis: 100%; */
+}
+/* .skill-row {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+    margin:1rem;
+    flex-basis:100%;
+} */
+.skill-points {
+    flex: 1;
+    margin-bottom: 1rem;
+}
+.skill-points img {
+    /* max-width: 30%; */
+    max-width:3rem;
+    max-height:3rem;
+}
+/* .skill-points {
+    display: block;
+    width:5rem;
+    height:5rem;
+}
+#skill01 {
+    background-image: url(\img\icons\draw.svg);
+    background-size:cover;
+} */
+#skill-1 img{
+    max-width: 2.5rem;
+    max-height:2.5rem;
+}
+#skill-2 img{
+    max-width:2.7rem;
+    max-height:2.7rem;
+}
+#skill-5 img, #skill-6 img{
+    max-width:4rem;
+    max-height:4rem;
+}
 
+/* 网页article的footer  contact部分 */
+#contact-container {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin-left: auto;
+    margin-right:auto;
+    align-items: center;
+    justify-content: center;
+}
+#contact-container div {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#contact-container img {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 8px;
+}
+#contact-container p {
+    font-size:50%;
+}
+.contact-intro {
+    color: var(--blue-color);
+    font-size:50%;
+}
 
 /* 网页footer部分 */
 .page-footer {
@@ -270,7 +363,6 @@ section img {
     text-align: center;
     color: var(--grey-color);
 }
-
 
 /* 通用部分 */
 .wrapper {
@@ -301,14 +393,16 @@ section img {
     position: relative;
     flex-wrap: wrap;
 }
-
+/* 动画和滚动页面 */
 #works-list div, #novels-list div, #CG-list div {
     /* width:23%; */
     padding:0 1rem;
     transition: all .2s ease-out;
+    align-items: center;
 }
 #works-list img, #novels-list img, #CG-list img {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
 }
 #works-list div:hover, #novels-list div:hover, #CG-list div:hover {
     transform: scale(1.1);
@@ -350,7 +444,7 @@ section img {
     width: 23%;
     margin-bottom: 1rem;
 }
-
+/* 屏幕尺寸缩放适配 */
 @media screen and (max-width:1000px) {
     .screen-resp {
         width:45%;
@@ -379,5 +473,30 @@ section img {
     .screen-resp-nav-width {
         max-width: 216px;
         height:max-content;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    #contact-container {
+        flex-direction: column;
+    }
+    .skill-points {
+        flex: 0 0 22%;
+    }
+    .skill-points img {
+        max-width: 2rem;
+        max-height: 2rem;
+    }
+    #skill-5 img, #skill-6 img {
+        max-width:2.4rem;
+        max-height:2.4rem;
+    }
+    #skill-1 img {
+        max-width:1.6rem;
+        max-height:1.6rem;
+    }
+    #skill-2 img {
+        max-width:1.8rem;
+        max-height:1.8rem;
     }
 }

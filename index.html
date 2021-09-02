@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="hp_style.css">
+    <link rel="icon" type="image/png" sizes="16x16"  href="/favicons/houtou_icon_16x16.png">
     <script>
         function scrollWindow(){
             window.scrollTo(960,350);
         }
         </script>
-    <title>Hi! Vontean</title>
+    <title>Von.io</title>
 </head>
 <body>
     <!-- 浮动的标题栏和导航 -->
@@ -41,9 +44,11 @@
         <div class="gradient-div"></div>
     </header>
 
+    <!-- 网页内容主体 -->
     <div class="container">
         <article>
             <div class="wrapper">
+                <!-- 自我介绍 -->
                 <header class="article-header">
                     <h1 id="Link-intro" class="titles">关于我<p>Introduction</p></h1>
                     <div id="intro">
@@ -59,17 +64,27 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem aliquam eveniet blanditiis quidem quae facere exercitationem quos fuga quas! Excepturi corrupti itaque quod consequatur blanditiis hic sapiente corporis fuga dicta? Deleniti quisquam odio repellendus, perspiciatis aliquid nisi distinctio esse odit. Non cum perspiciatis eius aliquid, repellat impedit alias cupiditate.</p>
                     </div>
                 </header>
+                <!-- 作品内容连接 -->
                 <section>
+                    <!-- 技能点 -->
                     <div id="skill">
                         <h1 id="Link-skill" class="titles">技能点<p>Skills</p></h1>
-                        <div>
-                            <p>01</p>
-                            <p>02</p>
-                            <p>03</p>
-                            <p>04</p>
-                            <p>05</p>
+                        <div id="skill-points">
+                            <!-- <div class="skill-row"> -->
+                            <div class="skill-points" id="skill-1"><img src="\img\icons\draw.svg"></div>
+                            <div class="skill-points" id="skill-2"><img src="\img\icons\typewriter.svg"></div>
+                            <div class="skill-points" id="skill-3"><img src="\img\icons\movies.svg"></div>
+                            <div class="skill-points" id="skill-4"><img src="\img\icons\blender.svg"></div>
+                            <!-- </div> -->
+                            <!-- <div class="skill-row"> -->
+                            <div class="skill-points" id="skill-5"><img src="\img\icons\rhinoceros.svg"></div>
+                            <div class="skill-points" id="skill-6"><img src="\img\icons\grasshopper.svg"></div>
+                            <div class="skill-points" id="skill-7"><img src="\img\icons\python.svg"></div>
+                            <div class="skill-points" id="skill-8"><img src="\img\icons\css.svg"></div>
+                            <!-- </div> -->
                         </div>
                     </div>
+                    <!-- 设计作业 -->
                     <div id="pj-works">
                         <h1 id="Link-works" class="titles">设计作业<p>Design Project</p></h1>
                         <div id="works-list">
@@ -79,6 +94,7 @@
                             <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">项目四</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
                         </div>
                     </div>
+                    <!-- 小说故事投稿 -->
                     <div id="pj-novels"></div>
                         <h1 id="Link-novels" class="titles">小说<p>Novels</p></h1>
                         <div id="novels-list">
@@ -87,6 +103,7 @@
                             <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">小说三</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
                             <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">小说四</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
                         </div>
+                    <!-- 视觉艺术练习 -->
                     <div id="pj-CG"></div>
                         <h1 id="Link-CG" class="titles">CG练习<p>CG Practice</p></h1>
                         <div id="CG-list">
@@ -95,19 +112,19 @@
                             <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">图像三</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
                         </div>
                 </section>
+                <!-- 联系方式 -->
                 <footer>
                     <h1 id="Link-Cont" class="titles">联系我<p>Contact Me</p></h1>
-                    <div id="contact">
-                        <nav>
-                            <a href="#">address</a>
-                            <a href="#">mail</a>
-                            <a href="#">wechat</a>
-                        </nav>
+                    <div id="contact-container"> 
+                            <div><img src="\img\icons\address.svg"><p class="upper">address</p><p class="contact-intro">同济西南十一</p></div>
+                            <div><img src="\img\icons\ic_email_round.svg"><p class="upper">mail</p><p class="contact-intro">lwtvontean@tongji.edu.cn</p></div>
+                            <div><img src="\img\icons\wechat.svg"><p class="upper">wechat</p><p class="contact-intro">Vontean.lwt</p></div>
                     </div>
                 </footer>
             </div>
         </article>
     </div>
+    <!-- 网页底部提示 -->
     <footer class="page-footer">
         <p>到底线了哦~</p>
         <div></div>
