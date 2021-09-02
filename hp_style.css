@@ -11,6 +11,7 @@
     --black-color: #111;
     --grey-color: rgba(110, 110, 110, 0.5);
     --gradient-color: rgb(73, 156, 204, 0.9);
+    --blue-color: rgb(73, 156, 204);
     animation: gradientChange 2s infinite alternate;
 }
 @keyframes gradientChange {
@@ -129,6 +130,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    max-width:100%;
 }
 li {
     display: inline;
@@ -142,9 +144,11 @@ li a:hover {
 }
 
 .ph-nav a {
-    padding:0 1rem;
+    padding: 1px 1rem;
     text-decoration:none;
-    font-size: 100%;
+    /* margin-top: 1px;
+    margin-bottom: 1px; */
+    /* font-size: 100%; */
 }
 .Von {
     padding-top: 4rem;
@@ -160,6 +164,7 @@ li a:hover {
 .Von-sentence {
     /* margin: 0 0; */
     margin-top: 3px;
+    font-size: 100%;
 }
 
 /* article部分 */
@@ -183,7 +188,7 @@ article {
     max-width: 40%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:3rem;
+    margin-bottom:2.5rem;
     padding-bottom: 1rem;
     font-size: 140%;
     font-style: italic;
@@ -298,9 +303,17 @@ section img {
 }
 
 #works-list div, #novels-list div, #CG-list div {
-    width:23%;
-    padding:0 10px;
+    /* width:23%; */
+    padding:0 1rem;
+    transition: all .2s ease-out;
 }
+#works-list img, #novels-list img, #CG-list img {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+#works-list div:hover, #novels-list div:hover, #CG-list div:hover {
+    transform: scale(1.1);
+}
+
 #Link-intro:target, 
 #Link-skill:target,
 #Link-works:target, 
@@ -310,4 +323,61 @@ section img {
     padding-top: 356px;
 }
 
-/* hhsadzdfh */
+.item-title {
+    font-size: 16px;
+    background-color: rgb(73, 156, 204, 0.25);
+    width: fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:1rem;
+    padding: 0 8px;
+    border-radius: 3px;
+    font-weight: light;
+    color:var(--blue-color);
+}
+.item-description {
+    font-size: 50%;
+    text-align: left;
+    text-indent: 4ch;
+    padding-top: 8px;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    /* color:red; */
+}
+
+.screen-resp {
+    width: 23%;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width:1000px) {
+    .screen-resp {
+        width:45%;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .screen-resp {
+        width:90%;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .screen-resp-sentence {
+        font-size: 75%;
+    }
+    .screen-resp-nav {
+        font-size:50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .screen-resp-nav {
+        font-size: 30%;
+    }
+    .screen-resp-nav-width {
+        max-width: 216px;
+        height:max-content;
+    }
+}
