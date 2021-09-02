@@ -11,7 +11,10 @@
         function scrollWindow(){
             window.scrollTo(960,350);
         }
-        </script>
+        $(document).ready(function(){
+            $('#box').css('height',$('#box').css('width'));
+        })
+    </script>
     <title>Von.io</title>
 </head>
 <body>
@@ -26,7 +29,7 @@
             <div class="wrapper">
                 <div class="ph-title">
                     <span class="Von">VON</span>
-                    <span class="Von-sentence screen-resp-sentence">" Welcome to my personal website!!! "</span>
+                    <span class="Von-sentence screen-resp-sentence">"饮 酒 南 山 ， 春 宵 嫣 然"</span>
                     <!-- <p>Hello</p> -->
                 </div>
                 <div class="ph-nav screen-resp-nav-width">
@@ -88,28 +91,35 @@
                     <div id="pj-works">
                         <h1 id="Link-works" class="titles">设计作业<p>Design Project</p></h1>
                         <div id="works-list">
-                            <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">项目一</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
-                            <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">项目二</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
-                            <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">项目三</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
-                            <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">项目四</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
+                            <div class="screen-resp"><img src="\img\design\Design_felix_stool.png"><p class="item-title">Felix</p><p class="item-description">宜家黑客凳子。以盘子和盘子架为组件构建，在日常之物的联系中发掘想象的趣味。</p></div>
+                            <div class="screen-resp"><img src="\img\design\Design_aqua_vehicle.png"><p class="item-title">蔚蓝竞速</p><p class="item-description">2035的蔚蓝海洋竞速载具，变形构架、徜徉水中九重奇境。驱动引擎、速度皆在下一秒。</p></div>
+                            <div class="screen-resp"><img src="\img\design\Design_fire_mask.png"><p class="item-title">O-relif</p><p class="item-description">为保障火灾受困者而设计的可持续逃生呼吸器，轻便供氧，协助消防队伍守护人民安全。</p></div>
+                            <div class="screen-resp"><img src="\img\design\Design_toys_home.png"><p class="item-title">Toys Home</p><p class="item-description">独特收纳盒设计，为孩子打造他和玩具的互动社区，希望童心常在、伴随成长。</p></div>
                         </div>
                     </div>
                     <!-- 小说故事投稿 -->
                     <div id="pj-novels"></div>
                         <h1 id="Link-novels" class="titles">小说<p>Novels</p></h1>
                         <div id="novels-list">
-                            <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">小说一</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
-                            <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">小说二</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
-                            <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">小说三</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
-                            <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">小说四</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
+                            <div class="screen-resp"><img id="box" src="\img\novels\distance.png"><p class="item-title">近在咫尺的远方</p><p class="item-description">/粒子是静止的，而时空在以光速向前变化着。其实前面的粒子并没有动，它们在静静地等待着什么，而后方的粒子也不知不觉地停了下来。时空像一条光河般飞逝而过……/</p></div>
+                            <div class="screen-resp"><img id="box" src="\img\novels\star_sky.png"><p class="item-title">星空</p><p class="item-description">/温度骤然地降到了零下几十摄氏度。我的身体渐渐地被冰冻，意识逐渐地模糊。在我的生命机能消失后，我的身躯会在宇宙中飘荡，百年不腐，却会随着这铁板飞船一起烟消云散。可我痴迷地看着星空……/</p></div>
+                            <div class="screen-resp"><img id="box" src="\img\novels\blood_crime.png"><p class="item-title">罪与血</p><p class="item-description">/莱茵河往日粼粼的水波此刻也像一只侵略的河狮，汹涌地向前刺去。沿河大道的石板上，被次序前进的装甲车碾压出一声闷响。头戴锃亮铁盔的士兵们满目阴沉地踏过，从旁观的人群眼中刻印出他们血色的剪影……/</p></div>
+                            <div class="screen-resp"><img id="box" src="\img\novels\chess_king.png"><p class="item-title">上校</p><p class="item-description">
+                                /上校昏沉中，看见了金色的沙滩，悬空的狮子。
+                                他声嘶力竭地吼道：“正义万岁！”
+                                群情激愤了，又万籁俱寂了。
+                                突然，传来一声刺耳的笑。
+                                “爸，将军！
+                                ……/
+                            </p></div>
                         </div>
                     <!-- 视觉艺术练习 -->
                     <div id="pj-CG"></div>
                         <h1 id="Link-CG" class="titles">CG练习<p>CG Practice</p></h1>
                         <div id="CG-list">
-                            <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">图像一</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
-                            <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">图像二</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
-                            <div class="screen-resp"><img src="https://picsum.photos/300/300"><p class="item-title">图像三</p><p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sit!</p></div>
+                            <div class="screen-resp"><img src="\img\CG\CG_guru_classic_300.png"><p class="item-title">咖啡甜甜圈</p><p class="item-description">Guru 的经典入门，用来解馋。</p></div>
+                            <div class="screen-resp"><img src="\img\CG\CG_lowpoly_island_300.png"><p class="item-title">空岛</p><p class="item-description">低面数风景，下一步像素世界。</p></div>
+                            <div class="screen-resp"><img src="\img\CG\CG_car_eevee_300.png"><p class="item-title">光晕上海</p><p class="item-description">城市的光污染，放映在前车窗的雨帘。</p></div>
                         </div>
                 </section>
                 <!-- 联系方式 -->
