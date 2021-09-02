@@ -505,3 +505,9 @@ section img {
         max-height:1.8rem;
     }
 }
+
+@media screen and (max-width:420px) {
+    .wrapper {
+        padding: 0 0;
+    }
+}
